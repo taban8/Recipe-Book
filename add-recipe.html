@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="add-recipe.html">Add Recipe</a></li>
+            <li><a href="recipe-list.html">Recipe List</a></li>
+        </ul>
+    </nav>
+
+    <!-- Add Recipe Form -->
+    <section>
+        <h1>Add a New Recipe</h1>
+        <form action="submit-recipe.html" method="POST">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" name="recipe-name" required>
+            <br><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <br><br>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" required></textarea>
+            <br><br>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" required></textarea>
+            <br><br>
+
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" name="image" required>
+            <br><br>
+
+            <input type="submit" value="Add Recipe">
+        </form>
+    </section>
+</body>
+</html>
